@@ -1,5 +1,9 @@
 # vhdl-exercise
 
+Fixed errors, kept the version 4 bits.
+Simplified inversion of m to 1 line instead of bit by bit.
+
+____
 Bob had to ship the ALU design to the hardware manufacturer by yesterday.
 The project manager is angry about missed deadline.
 Bob still hasn't figured out why the ALU is not working properly.
