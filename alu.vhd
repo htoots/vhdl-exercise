@@ -35,11 +35,10 @@ begin
     operation_type   <=   opcode(1);   -- Are we doing logical or arithmetic operation?
     sub              <=   opcode(0);   -- Are we doing addition/NAND or subtraction/NOR?
 
-
     -- Here we calculate inverted bits for subtraction if necessary
     m_inverted <= (not m) when sub = '1' else m;
 
-    -- Addition and subtraction
+    -- Addition
     adder_instance: carry_ripple_adder
         port map(
             a => n,
